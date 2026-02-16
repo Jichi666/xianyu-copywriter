@@ -19,31 +19,12 @@
 
 ## 安装方法
 
-### 方法1：通过技能文件安装（推荐）
-
-1. 下载 `.skill` 文件：
-   ```bash
-   # 下载技能包到OpenClaw工作目录
-   wget https://github.com/[your-username]/xianyu-copywriter/raw/main/xianyu-copywriter.skill
-   ```
-
-2. 解压到OpenClaw技能目录：
-   ```bash
-   # 解压到OpenClaw技能目录
-   unzip xianyu-copywriter.skill -d ~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/
-   ```
-
-3. 重启OpenClaw Gateway：
-   ```bash
-   openclaw gateway restart
-   ```
-
-### 方法2：通过源码安装
+### 方法1：通过源码安装（推荐）
 
 1. 克隆或下载源码：
    ```bash
    cd ~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/
-   git clone https://github.com/[your-username]/xianyu-copywriter.git
+   git clone https://github.com/Jichi666/xianyu-copywriter.git
    ```
 
 2. 确保目录结构正确：
@@ -61,11 +42,11 @@
    openclaw gateway restart
    ```
 
-### 方法3：手动复制（适用于本地开发）
+### 方法2：手动下载安装
 
-1. 复制整个技能文件夹到OpenClaw技能目录
-
-2. 重启OpenClaw Gateway
+1. 下载源码包到本地
+2. 解压后复制整个文件夹到OpenClaw技能目录：`~/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/`
+3. 重启OpenClaw Gateway
 
 ## 使用方法
 
@@ -100,7 +81,7 @@
 
 ### 虚拟商品示例
 
-**请求：** "帮我写一个闲鱼文案，卖Seedance 2.0视频提示词服务"
+**请求：** "帮我写一个闲鱼文案，卖AI视频提示词服务"
 
 **输出：** 包含警告说明、购买须知、产品介绍、版权声明、关键词等完整模块
 
@@ -116,10 +97,9 @@
 xianyu-copywriter/
 ├── SKILL.md                              # 技能主文件（AI读取使用）
 ├── README.md                             # 安装说明（这个文件）
-├── references/
-│   ├── virtual-product-template.md       # 虚拟商品文案模板
-│   └── physical-product-template.md      # 实物商品文案模板
-└── xianyu-copywriter.skill               # 技能包文件（用于分发）
+└── references/
+    ├── virtual-product-template.md       # 虚拟商品文案模板
+    └── physical-product-template.md      # 实物商品文案模板
 ```
 
 ## 技能结构
@@ -198,12 +178,7 @@ https://docs.openclaw.ai/skills
 
 ## 许可证
 
-MIT License
-
-## 联系方式
-
-- GitHub Issues: https://github.com/[your-username]/xianyu-copywriter/issues
-- 作者: OpenClaw Community
+MIT License - 允许个人学习、研究和修改
 
 ## 更新日志
 
@@ -216,4 +191,4 @@ MIT License
 
 ---
 
-**Made with ❤️ for OpenClaw**
+**MIT License 开源 - 允许个人学习、研究和修改使用**
